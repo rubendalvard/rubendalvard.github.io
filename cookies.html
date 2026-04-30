@@ -2,32 +2,116 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Politique Cookies – JobBoard Bilingue</title>
+  <title>Cookies – Rubén D'ALVARD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Politique cookies du JobBoard bilingue FR/EN : types de cookies, consentement, gestion des préférences." />
+
+  <!-- SEO -->
+  <meta name="description" content="Informations sur l'utilisation des cookies sur le site professionnel de Rubén D'ALVARD.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cookies – Rubén D'ALVARD">
+  <meta property="og:description" content="Informations sur l'utilisation des cookies.">
+  <meta property="og:image" content="photo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="fr" href="cookies.html">
+  <link rel="alternate" hreflang="en" href="cookies.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body { font-family:'Inter',sans-serif; background:#F5F7FA; margin:0; }
-    header, footer { background:#fff; border-bottom:1px solid #E5E7EB; }
-    .container { max-width:1120px; margin:auto; padding:0 16px; }
-    .header-inner { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
-    .logo { display:flex; align-items:center; gap:8px; font-weight:700; color:#1F3C88; }
-    .logo-mark { width:28px; height:28px; background:linear-gradient(135deg,#1F3C88,#4F8FF7); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; }
-    nav a { margin-right:20px; color:#6B7280; font-size:14px; text-decoration:none; }
-    nav a:hover { color:#1F3C88; }
-    .lang-switch button { padding:6px 10px; border:none; cursor:pointer; }
-    .lang-switch .active { background:#1F3C88; color:#fff; border-radius:999px; }
+    :root {
+      --primary: #1F3C88;
+      --accent: #2BB673;
+      --bg: #F5F7FA;
+      --text-main: #1A1A1A;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+    }
 
-    h1 { font-size:32px; color:#1F3C88; margin-top:32px; }
-    .section { background:#fff; padding:20px; border-radius:12px; border:1px solid #E5E7EB; margin-top:24px; }
-    .section h2 { font-size:22px; color:#1F3C88; margin-bottom:12px; }
-    .section p, .section ul { color:#6B7280; font-size:15px; line-height:1.6; }
-    .section ul { padding-left:20px; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
 
-    footer { padding:20px 0; margin-top:40px; border-top:1px solid #E5E7EB; font-size:13px; color:#6B7280; }
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 16px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .lang-switch button {
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .lang-switch .active {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 999px;
+    }
+
+    /* PAGE CONTENT */
+    .legal {
+      padding: 60px 0;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: var(--primary);
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      padding: 20px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
   </style>
 </head>
 
@@ -36,19 +120,14 @@
 <header>
   <div class="container header-inner">
     <div class="logo">
-      <div class="logo-mark">JB</div>
-      <span>JobBoard</span>
+      <strong style="color:var(--primary);">Rubén D'ALVARD</strong>
     </div>
 
     <nav>
       <a href="index.html" data-i18n="nav.home">Accueil</a>
-      <a href="jobs.html" data-i18n="nav.jobs">Offres</a>
-      <a href="categories.html" data-i18n="nav.categories">Catégories</a>
       <a href="about.html" data-i18n="nav.about">À propos</a>
+      <a href="cv.html" data-i18n="nav.cv">Mes CV</a>
       <a href="contact.html" data-i18n="nav.contact">Contact</a>
-      <a href="legal.html" data-i18n="nav.legal">Mentions légales</a>
-      <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
-      <a href="cookies.html" data-i18n="nav.cookies">Cookies</a>
     </nav>
 
     <div class="lang-switch">
@@ -58,122 +137,62 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main class="container legal">
 
-    <h1 data-i18n="cookies.title">Politique Cookies</h1>
+  <h1 data-i18n="cookies.title">Cookies</h1>
 
-    <!-- SECTION 1 : INTRO -->
-    <div class="section">
-      <h2 data-i18n="cookies.introTitle">Introduction</h2>
-      <p data-i18n="cookies.introText">
-        Cette politique explique comment nous utilisons les cookies pour améliorer votre expérience sur notre site.
-      </p>
-    </div>
+  <p data-i18n="cookies.intro">
+    Ce site utilise uniquement des cookies strictement nécessaires à son fonctionnement, notamment pour mémoriser votre préférence de langue (FR/EN).
+  </p>
 
-    <!-- SECTION 2 : QU'EST-CE QU'UN COOKIE -->
-    <div class="section">
-      <h2 data-i18n="cookies.whatTitle">Qu’est‑ce qu’un cookie ?</h2>
-      <p data-i18n="cookies.whatText">
-        Un cookie est un petit fichier stocké sur votre appareil permettant de mémoriser vos préférences et d’améliorer la navigation.
-      </p>
-    </div>
+  <h2 data-i18n="cookies.typeTitle">Types de cookies utilisés</h2>
+  <p data-i18n="cookies.typeText">
+    • Cookies de langue : permettent de conserver votre choix entre Français et Anglais.<br>
+    • Aucun cookie publicitaire, analytique ou de suivi n’est utilisé.
+  </p>
 
-    <!-- SECTION 3 : TYPES DE COOKIES -->
-    <div class="section">
-      <h2 data-i18n="cookies.typesTitle">Types de cookies utilisés</h2>
-      <ul>
-        <li data-i18n="cookies.type1"><strong>Cookies essentiels :</strong> nécessaires au fonctionnement du site.</li>
-        <li data-i18n="cookies.type2"><strong>Cookies de performance :</strong> permettent d’analyser l’utilisation du site.</li>
-        <li data-i18n="cookies.type3"><strong>Cookies de préférences :</strong> mémorisent vos choix (langue, filtres…).</li>
-      </ul>
-    </div>
+  <h2 data-i18n="cookies.controlTitle">Gestion des cookies</h2>
+  <p data-i18n="cookies.controlText">
+    Vous pouvez supprimer les cookies à tout moment via les paramètres de votre navigateur.  
+    Le site continuera de fonctionner normalement.
+  </p>
 
-    <!-- SECTION 4 : CONSENTEMENT -->
-    <div class="section">
-      <h2 data-i18n="cookies.consentTitle">Consentement</h2>
-      <p data-i18n="cookies.consentText">
-        En utilisant notre site, vous acceptez l’utilisation des cookies essentiels. Vous pouvez refuser les cookies non essentiels.
-      </p>
-    </div>
-
-    <!-- SECTION 5 : GESTION -->
-    <div class="section">
-      <h2 data-i18n="cookies.manageTitle">Gestion des cookies</h2>
-      <p data-i18n="cookies.manageText">
-        Vous pouvez désactiver les cookies depuis les paramètres de votre navigateur. Cela peut toutefois limiter certaines fonctionnalités.
-      </p>
-    </div>
-
-  </div>
 </main>
 
 <footer>
-  <div class="container">
-    © <span id="year"></span> JobBoard — <span data-i18n="footer.rights">Tous droits réservés.</span>
-  </div>
+  © <span id="year"></span> Rubén D'ALVARD — <span data-i18n="footer.rights">Tous droits réservés.</span>
 </footer>
 
 <script>
   const translations = {
     fr: {
       "nav.home": "Accueil",
-      "nav.jobs": "Offres",
-      "nav.categories": "Catégories",
       "nav.about": "À propos",
+      "nav.cv": "Mes CV",
       "nav.contact": "Contact",
-      "nav.legal": "Mentions légales",
-      "nav.privacy": "Confidentialité",
-      "nav.cookies": "Cookies",
 
-      "cookies.title": "Politique Cookies",
-      "cookies.introTitle": "Introduction",
-      "cookies.introText": "Cette politique explique comment nous utilisons les cookies pour améliorer votre expérience sur notre site.",
-
-      "cookies.whatTitle": "Qu’est‑ce qu’un cookie ?",
-      "cookies.whatText": "Un cookie est un petit fichier stocké sur votre appareil permettant de mémoriser vos préférences et d’améliorer la navigation.",
-
-      "cookies.typesTitle": "Types de cookies utilisés",
-      "cookies.type1": "Cookies essentiels : nécessaires au fonctionnement du site.",
-      "cookies.type2": "Cookies de performance : permettent d’analyser l’utilisation du site.",
-      "cookies.type3": "Cookies de préférences : mémorisent vos choix (langue, filtres…).",
-
-      "cookies.consentTitle": "Consentement",
-      "cookies.consentText": "En utilisant notre site, vous acceptez l’utilisation des cookies essentiels. Vous pouvez refuser les cookies non essentiels.",
-
-      "cookies.manageTitle": "Gestion des cookies",
-      "cookies.manageText": "Vous pouvez désactiver les cookies depuis les paramètres de votre navigateur. Cela peut toutefois limiter certaines fonctionnalités.",
+      "cookies.title": "Cookies",
+      "cookies.intro": "Ce site utilise uniquement des cookies strictement nécessaires à son fonctionnement, notamment pour mémoriser votre préférence de langue (FR/EN).",
+      "cookies.typeTitle": "Types de cookies utilisés",
+      "cookies.typeText": "• Cookies de langue : permettent de conserver votre choix entre Français et Anglais.\n• Aucun cookie publicitaire, analytique ou de suivi n’est utilisé.",
+      "cookies.controlTitle": "Gestion des cookies",
+      "cookies.controlText": "Vous pouvez supprimer les cookies à tout moment via les paramètres de votre navigateur. Le site continuera de fonctionner normalement.",
 
       "footer.rights": "Tous droits réservés."
     },
 
     en: {
       "nav.home": "Home",
-      "nav.jobs": "Jobs",
-      "nav.categories": "Categories",
       "nav.about": "About",
+      "nav.cv": "My CVs",
       "nav.contact": "Contact",
-      "nav.legal": "Legal Notice",
-      "nav.privacy": "Privacy Policy",
-      "nav.cookies": "Cookies",
 
-      "cookies.title": "Cookie Policy",
-      "cookies.introTitle": "Introduction",
-      "cookies.introText": "This policy explains how we use cookies to improve your experience on our website.",
-
-      "cookies.whatTitle": "What is a cookie?",
-      "cookies.whatText": "A cookie is a small file stored on your device that helps remember your preferences and improve navigation.",
-
-      "cookies.typesTitle": "Types of cookies used",
-      "cookies.type1": "Essential cookies: required for the website to function.",
-      "cookies.type2": "Performance cookies: help analyze how the site is used.",
-      "cookies.type3": "Preference cookies: remember your choices (language, filters…).",
-
-      "cookies.consentTitle": "Consent",
-      "cookies.consentText": "By using our site, you accept the use of essential cookies. You may refuse non‑essential cookies.",
-
-      "cookies.manageTitle": "Managing cookies",
-      "cookies.manageText": "You can disable cookies from your browser settings. However, this may limit some features.",
+      "cookies.title": "Cookies",
+      "cookies.intro": "This website only uses cookies strictly necessary for its operation, mainly to remember your language preference (FR/EN).",
+      "cookies.typeTitle": "Types of cookies used",
+      "cookies.typeText": "• Language cookies: allow your choice between French and English to be saved.\n• No advertising, analytics or tracking cookies are used.",
+      "cookies.controlTitle": "Managing cookies",
+      "cookies.controlText": "You can delete cookies at any time through your browser settings. The site will continue to function normally.",
 
       "footer.rights": "All rights reserved."
     }
@@ -189,20 +208,15 @@
   document.getElementById("btn-fr").onclick = () => {
     applyTranslations("fr");
     localStorage.setItem("lang", "fr");
-    document.getElementById("btn-fr").classList.add("active");
-    document.getElementById("btn-en").classList.remove("active");
   };
 
   document.getElementById("btn-en").onclick = () => {
     applyTranslations("en");
     localStorage.setItem("lang", "en");
-    document.getElementById("btn-en").classList.add("active");
-    document.getElementById("btn-fr").classList.remove("active");
   };
 
   const saved = localStorage.getItem("lang") || "fr";
   applyTranslations(saved);
-  document.getElementById("btn-" + saved).classList.add("active");
 
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
