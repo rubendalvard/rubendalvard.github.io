@@ -2,38 +2,153 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>À propos – JobBoard Bilingue</title>
+  <title>À propos – Rubén D'ALVARD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="À propos du JobBoard bilingue FR/EN : mission, valeurs, qualité, sécurité des données." />
+
+  <!-- SEO -->
+  <meta name="description" content="Découvrez le parcours professionnel de Rubén D'ALVARD : Responsable des Opérations, Service Client et Business Developer avec 15+ ans d'expérience.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="À propos – Rubén D'ALVARD">
+  <meta property="og:description" content="Responsable des Opérations, Service Client et Business Developer – 15+ ans d'expérience.">
+  <meta property="og:image" content="photo.jpg">
+  <meta property="og:type" content="profile">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="fr" href="about.html">
+  <link rel="alternate" hreflang="en" href="about.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body { font-family:'Inter',sans-serif; background:#F5F7FA; margin:0; }
-    header, footer { background:#fff; border-bottom:1px solid #E5E7EB; }
-    .container { max-width:1120px; margin:auto; padding:0 16px; }
-    .header-inner { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
-    .logo { display:flex; align-items:center; gap:8px; font-weight:700; color:#1F3C88; }
-    .logo-mark { width:28px; height:28px; background:linear-gradient(135deg,#1F3C88,#4F8FF7); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; }
-    nav a { margin-right:20px; color:#6B7280; font-size:14px; text-decoration:none; }
-    nav a:hover { color:#1F3C88; }
-    .lang-switch button { padding:6px 10px; border:none; cursor:pointer; }
-    .lang-switch .active { background:#1F3C88; color:#fff; border-radius:999px; }
+    :root {
+      --primary: #1F3C88;
+      --accent: #2BB673;
+      --bg: #F5F7FA;
+      --text-main: #1A1A1A;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+    }
 
-    h1 { font-size:32px; color:#1F3C88; margin-top:32px; }
-    .subtitle { color:#6B7280; margin-top:8px; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
 
-    .section { background:#fff; padding:20px; border-radius:12px; border:1px solid #E5E7EB; margin-top:24px; }
-    .section h2 { font-size:22px; color:#1F3C88; margin-bottom:12px; }
-    .section p { color:#6B7280; font-size:15px; line-height:1.6; }
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
 
-    .values-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:16px; }
-    .value-card { background:#F9FAFB; padding:16px; border-radius:12px; border:1px solid #E5E7EB; }
-    .value-title { font-size:16px; font-weight:600; color:#1F3C88; margin-bottom:6px; }
-    .value-text { font-size:14px; color:#6B7280; }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 16px;
+    }
 
-    footer { padding:20px 0; margin-top:40px; border-top:1px solid #E5E7EB; font-size:13px; color:#6B7280; }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .lang-switch button {
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .lang-switch .active {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 999px;
+    }
+
+    /* PAGE ABOUT */
+    .about {
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .about img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin: 40px 0;
+      text-align: left;
+    }
+
+    .section h3 {
+      font-size: 22px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .section p {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin: 8px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    footer {
+      padding: 20px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
   </style>
 </head>
 
@@ -42,15 +157,14 @@
 <header>
   <div class="container header-inner">
     <div class="logo">
-      <div class="logo-mark">JB</div>
-      <span>JobBoard</span>
+      <strong style="color:var(--primary);">Rubén D'ALVARD</strong>
     </div>
 
     <nav>
       <a href="index.html" data-i18n="nav.home">Accueil</a>
-      <a href="jobs.html" data-i18n="nav.jobs">Offres</a>
-      <a href="categories.html" data-i18n="nav.categories">Catégories</a>
       <a href="about.html" data-i18n="nav.about">À propos</a>
+      <a href="cv.html" data-i18n="nav.cv">Mes CV</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
 
     <div class="lang-switch">
@@ -60,120 +174,94 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main class="container">
+  <section class="about">
 
-    <h1 data-i18n="about.title">À propos</h1>
-    <p class="subtitle" data-i18n="about.subtitle">
-      Une plateforme pensée pour connecter efficacement talents et entreprises, en France et à l’international.
-    </p>
+    <img src="photo.jpg" alt="Photo de profil">
 
-    <!-- SECTION 1 : MISSION -->
+    <h1 data-i18n="about.title">À propos de moi</h1>
+    <h2 data-i18n="about.subtitle">Responsable des Opérations · Service Client · Business Developer</h2>
+
     <div class="section">
-      <h2 data-i18n="about.missionTitle">Notre mission</h2>
-      <p data-i18n="about.missionText">
-        Nous avons créé ce JobBoard pour simplifier la recherche d’emploi et le recrutement, en mettant l’accent sur la qualité, la clarté et l’accessibilité. 
-        Notre objectif est de permettre aux candidats de trouver des opportunités pertinentes, et aux entreprises d’identifier rapidement les meilleurs profils.
+      <h3 data-i18n="about.profileTitle">Profil professionnel</h3>
+      <p data-i18n="about.profileText">
+        Manager opérationnel trilingue avec plus de 15 ans d’expérience en gestion de sites, optimisation de processus, relation client et développement commercial. J’ai évolué dans des environnements exigeants où la qualité de service, la performance opérationnelle et la satisfaction client sont essentielles.
       </p>
     </div>
 
-    <!-- SECTION 2 : VALEURS -->
     <div class="section">
-      <h2 data-i18n="about.valuesTitle">Nos valeurs</h2>
-      <div class="values-grid">
-
-        <div class="value-card">
-          <div class="value-title" data-i18n="about.value1Title">Qualité</div>
-          <div class="value-text" data-i18n="about.value1Text">
-            Des offres structurées, vérifiées et présentées de manière claire pour une meilleure expérience.
-          </div>
-        </div>
-
-        <div class="value-card">
-          <div class="value-title" data-i18n="about.value2Title">Transparence</div>
-          <div class="value-text" data-i18n="about.value2Text">
-            Des informations précises, des filtres pertinents et une navigation intuitive.
-          </div>
-        </div>
-
-        <div class="value-card">
-          <div class="value-title" data-i18n="about.value3Title">Sécurité</div>
-          <div class="value-text" data-i18n="about.value3Text">
-            Protection des données personnelles, conformité RGPD et hébergement sécurisé.
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- SECTION 3 : BILINGUISME -->
-    <div class="section">
-      <h2 data-i18n="about.bilingualTitle">Un JobBoard réellement bilingue</h2>
-      <p data-i18n="about.bilingualText">
-        Toutes les pages, les offres et les contenus sont disponibles en français et en anglais. 
-        Nous avons conçu un système de traduction cohérent pour offrir une expérience fluide aux candidats et recruteurs internationaux.
+      <h3 data-i18n="about.skillsTitle">Compétences clés</h3>
+      <p data-i18n="about.skillsText">
+        • Gestion opérationnelle et pilotage de sites<br>
+        • Leadership, coaching et management d’équipes<br>
+        • Relation client, qualité de service et fidélisation<br>
+        • Optimisation des processus et gestion des KPI<br>
+        • Développement commercial et stratégie business
       </p>
     </div>
 
-  </div>
+    <div class="section">
+      <h3 data-i18n="about.expTitle">Expériences marquantes</h3>
+      <p data-i18n="about.expText">
+        • Responsable de Site Opérationnel – NAM6 Montpellier<br>
+        • Directeur d’Exploitation – France’s Best Tex-Mex<br>
+        • Conseiller Service Client – Groupe DBF Audi<br>
+        • Manager Commercial Adjoint – La Poste / Banque Postale
+      </p>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="cv-fr.pdf" class="btn btn-primary" download data-i18n="about.btnCVfr">Télécharger CV Français</a>
+      <a href="cv-en.pdf" class="btn btn-outline" download data-i18n="about.btnCVen">Download English CV</a>
+    </div>
+
+  </section>
 </main>
 
 <footer>
-  <div class="container">
-    © <span id="year"></span> JobBoard — <span data-i18n="footer.rights">Tous droits réservés.</span>
-  </div>
+  © <span id="year"></span> Rubén D'ALVARD — <span data-i18n="footer.rights">Tous droits réservés.</span>
 </footer>
 
 <script>
   const translations = {
     fr: {
       "nav.home": "Accueil",
-      "nav.jobs": "Offres",
-      "nav.categories": "Catégories",
       "nav.about": "À propos",
+      "nav.cv": "Mes CV",
+      "nav.contact": "Contact",
 
-      "about.title": "À propos",
-      "about.subtitle": "Une plateforme pensée pour connecter efficacement talents et entreprises, en France et à l’international.",
+      "about.title": "À propos de moi",
+      "about.subtitle": "Responsable des Opérations · Service Client · Business Developer",
+      "about.profileTitle": "Profil professionnel",
+      "about.profileText": "Manager opérationnel trilingue avec plus de 15 ans d’expérience en gestion de sites, optimisation de processus, relation client et développement commercial. J’ai évolué dans des environnements exigeants où la qualité de service, la performance opérationnelle et la satisfaction client sont essentielles.",
+      "about.skillsTitle": "Compétences clés",
+      "about.skillsText": "• Gestion opérationnelle et pilotage de sites\n• Leadership, coaching et management d’équipes\n• Relation client, qualité de service et fidélisation\n• Optimisation des processus et gestion des KPI\n• Développement commercial et stratégie business",
+      "about.expTitle": "Expériences marquantes",
+      "about.expText": "• Responsable de Site Opérationnel – NAM6 Montpellier\n• Directeur d’Exploitation – France’s Best Tex-Mex\n• Conseiller Service Client – Groupe DBF Audi\n• Manager Commercial Adjoint – La Poste / Banque Postale",
 
-      "about.missionTitle": "Notre mission",
-      "about.missionText": "Nous avons créé ce JobBoard pour simplifier la recherche d’emploi et le recrutement, en mettant l’accent sur la qualité, la clarté et l’accessibilité. Notre objectif est de permettre aux candidats de trouver des opportunités pertinentes, et aux entreprises d’identifier rapidement les meilleurs profils.",
-
-      "about.valuesTitle": "Nos valeurs",
-      "about.value1Title": "Qualité",
-      "about.value1Text": "Des offres structurées, vérifiées et présentées de manière claire pour une meilleure expérience.",
-      "about.value2Title": "Transparence",
-      "about.value2Text": "Des informations précises, des filtres pertinents et une navigation intuitive.",
-      "about.value3Title": "Sécurité",
-      "about.value3Text": "Protection des données personnelles, conformité RGPD et hébergement sécurisé.",
-
-      "about.bilingualTitle": "Un JobBoard réellement bilingue",
-      "about.bilingualText": "Toutes les pages, les offres et les contenus sont disponibles en français et en anglais. Nous avons conçu un système de traduction cohérent pour offrir une expérience fluide aux candidats et recruteurs internationaux.",
+      "about.btnCVfr": "Télécharger CV Français",
+      "about.btnCVen": "Télécharger CV Anglais",
 
       "footer.rights": "Tous droits réservés."
     },
 
     en: {
       "nav.home": "Home",
-      "nav.jobs": "Jobs",
-      "nav.categories": "Categories",
       "nav.about": "About",
+      "nav.cv": "My CVs",
+      "nav.contact": "Contact",
 
-      "about.title": "About",
-      "about.subtitle": "A platform designed to efficiently connect talent and companies, in France and internationally.",
+      "about.title": "About Me",
+      "about.subtitle": "Operations Manager · Customer Service Lead · Business Developer",
+      "about.profileTitle": "Professional Profile",
+      "about.profileText": "Trilingual operations manager with over 15 years of experience in site management, process optimization, customer relations and business development. I have worked in demanding environments where service quality, operational performance and customer satisfaction are essential.",
+      "about.skillsTitle": "Key Skills",
+      "about.skillsText": "• Operational management and site leadership\n• Team coaching and leadership\n• Customer service and quality management\n• Process optimization and KPI monitoring\n• Business development and commercial strategy",
+      "about.expTitle": "Key Experiences",
+      "about.expText": "• Operations Site Manager – NAM6 Montpellier\n• Operations Director – France’s Best Tex-Mex\n• Customer Service Advisor – DBF Audi Group\n• Deputy Commercial Manager – La Poste / Banque Postale",
 
-      "about.missionTitle": "Our mission",
-      "about.missionText": "We created this JobBoard to simplify job searching and hiring, with a focus on quality, clarity and accessibility. Our goal is to help candidates find relevant opportunities and enable companies to quickly identify the best profiles.",
-
-      "about.valuesTitle": "Our values",
-      "about.value1Title": "Quality",
-      "about.value1Text": "Structured, verified and clearly presented job offers for a better experience.",
-      "about.value2Title": "Transparency",
-      "about.value2Text": "Accurate information, relevant filters and intuitive navigation.",
-      "about.value3Title": "Security",
-      "about.value3Text": "Protection of personal data, GDPR compliance and secure hosting.",
-
-      "about.bilingualTitle": "A truly bilingual JobBoard",
-      "about.bilingualText": "All pages, job offers and content are available in French and English. We designed a consistent translation system to offer a smooth experience for international candidates and recruiters.",
+      "about.btnCVfr": "Download French CV",
+      "about.btnCVen": "Download English CV",
 
       "footer.rights": "All rights reserved."
     }
@@ -189,23 +277,19 @@
   document.getElementById("btn-fr").onclick = () => {
     applyTranslations("fr");
     localStorage.setItem("lang", "fr");
-    document.getElementById("btn-fr").classList.add("active");
-    document.getElementById("btn-en").classList.remove("active");
   };
 
   document.getElementById("btn-en").onclick = () => {
     applyTranslations("en");
     localStorage.setItem("lang", "en");
-    document.getElementById("btn-en").classList.add("active");
-    document.getElementById("btn-fr").classList.remove("active");
   };
 
   const saved = localStorage.getItem("lang") || "fr";
   applyTranslations(saved);
-  document.getElementById("btn-" + saved).classList.add("active");
 
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
+
