@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Espace Recruteurs – JobBoard Bilingue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Espace recruteurs du JobBoard bilingue FR/EN : dépôt d’offres, gestion des candidatures, tableau de bord entreprise." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family:'Inter',sans-serif; background:#F5F7FA; margin:0; }
+    header, footer { background:#fff; border-bottom:1px solid #E5E7EB; }
+    .container { max-width:1120px; margin:auto; padding:0 16px; }
+    .header-inner { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
+    .logo { display:flex; align-items:center; gap:8px; font-weight:700; color:#1F3C88; }
+    .logo-mark { width:28px; height:28px; background:linear-gradient(135deg,#1F3C88,#4F8FF7); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; }
+    nav a { margin-right:20px; color:#6B7280; font-size:14px; text-decoration:none; }
+    nav a:hover { color:#1F3C88; }
+    .lang-switch button { padding:6px 10px; border:none; cursor:pointer; }
+    .lang-switch .active { background:#1F3C88; color:#fff; border-radius:999px; }
+
+    h1 { font-size:32px; color:#1F3C88; margin-top:32px; }
+    .subtitle { color:#6B7280; margin-top:8px; }
+
+    .section { background:#fff; padding:20px; border-radius:12px; border:1px solid #E5E7EB; margin-top:24px; }
+    .section h2 { font-size:22px; color:#1F3C88; margin-bottom:12px; }
+    .section p { color:#6B7280; font-size:15px; }
+
+    .features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:16px; }
+    .feature-card { background:#F9FAFB; padding:16px; border-radius:12px; border:1px solid #E5E7EB; }
+    .feature-title { font-size:16px; font-weight:600; color:#1F3C88; margin-bottom:6px; }
+    .feature-text { font-size:14px; color:#6B7280; }
+
+    .btn-primary { background:#2BB673; color:#fff; padding:12px 20px; border-radius:999px; text-decoration:none; font-weight:600; display:inline-block; margin-top:20px; }
+    .btn-primary:hover { background:#23945f; }
+
+    footer { padding:20px 0; margin-top:40px; border-top:1px solid #E5E7EB; font-size:13px; color:#6B7280; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark">JB</div>
+      <span>JobBoard</span>
+    </div>
+
+    <nav>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="jobs.html" data-i18n="nav.jobs">Offres</a>
+      <a href="categories.html" data-i18n="nav.categories">Catégories</a>
+      <a href="about.html" data-i18n="nav.about">À propos</a>
+    </nav>
+
+    <div class="lang-switch">
+      <button id="btn-fr" class="active">FR</button>
+      <button id="btn-en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1 data-i18n="employers.title">Espace Recruteurs</h1>
+    <p class="subtitle" data-i18n="employers.subtitle">
+      Publiez vos offres, gérez vos candidatures et trouvez les meilleurs talents.
+    </p>
+
+    <!-- SECTION 1 : AVANTAGES -->
+    <div class="section">
+      <h2 data-i18n="employers.benefitsTitle">Pourquoi recruter avec nous ?</h2>
+      <p data-i18n="employers.benefitsText">
+        Notre JobBoard bilingue vous permet d’attirer des candidats qualifiés, en France et à l’international.
+      </p>
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="employers.feature1Title">Offres bilingues</div>
+          <div class="feature-text" data-i18n="employers.feature1Text">
+            Publiez vos annonces en français et en anglais pour toucher un public plus large.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="employers.feature2Title">Candidats qualifiés</div>
+          <div class="feature-text" data-i18n="employers.feature2Text">
+            Accédez à des profils expérimentés et spécialisés dans leur domaine.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="employers.feature3Title">Tableau de bord</div>
+          <div class="feature-text" data-i18n="employers.feature3Text">
+            Gérez vos offres, vos candidatures et vos échanges en un seul endroit.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="employers.feature4Title">Filtres avancés</div>
+          <div class="feature-text" data-i18n="employers.feature4Text">
+            Trouvez rapidement les candidats correspondant à vos critères.
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#" class="btn-primary" data-i18n="employers.cta">Publier une offre</a>
+    </div>
+
+    <!-- SECTION 2 : PROCESSUS -->
+    <div class="section">
+      <h2 data-i18n="employers.processTitle">Comment ça marche ?</h2>
+      <p data-i18n="employers.processText">
+        En quelques étapes simples, publiez vos offres et recevez des candidatures qualifiées.
+      </p>
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="employers.step1Title">1. Créez votre compte</div>
+          <div class="feature-text" data-i18n="employers.step1Text">
+            Configurez votre profil entreprise et ajoutez vos informations clés.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="employers.step2Title">2. Publiez vos offres</div>
+          <div class="feature-text" data-i18n="employers.step2Text">
+            Rédigez vos annonces en FR/EN et mettez-les en ligne en quelques minutes.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="employers.step3Title">3. Recevez des candidatures</div>
+          <div class="feature-text" data-i18n="employers.step3Text">
+            Les candidats postulent directement depuis la plateforme.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title" data-i18n="employers.step4Title">4. Recrutez efficacement</div>
+          <div class="feature-text" data-i18n="employers.step4Text">
+            Suivez les candidatures et échangez avec les talents en toute simplicité.
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#" class="btn-primary" data-i18n="employers.cta2">Créer un compte entreprise</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> JobBoard — <span data-i18n="footer.rights">Tous droits réservés.</span>
+  </div>
+</footer>
+
+<script>
+  const translations = {
+    fr: {
+      "nav.home": "Accueil",
+      "nav.jobs": "Offres",
+      "nav.categories": "Catégories",
+      "nav.about": "À propos",
+
+      "employers.title": "Espace Recruteurs",
+      "employers.subtitle": "Publiez vos offres, gérez vos candidatures et trouvez les meilleurs talents.",
+
+      "employers.benefitsTitle": "Pourquoi recruter avec nous ?",
+      "employers.benefitsText": "Notre JobBoard bilingue vous permet d’attirer des candidats qualifiés, en France et à l’international.",
+
+      "employers.feature1Title": "Offres bilingues",
+      "employers.feature1Text": "Publiez vos annonces en français et en anglais pour toucher un public plus large.",
+
+      "employers.feature2Title": "Candidats qualifiés",
+      "employers.feature2Text": "Accédez à des profils expérimentés et spécialisés dans leur domaine.",
+
+      "employers.feature3Title": "Tableau de bord",
+      "employers.feature3Text": "Gérez vos offres, vos candidatures et vos échanges en un seul endroit.",
+
+      "employers.feature4Title": "Filtres avancés",
+      "employers.feature4Text": "Trouvez rapidement les candidats correspondant à vos critères.",
+
+      "employers.cta": "Publier une offre",
+
+      "employers.processTitle": "Comment ça marche ?",
+      "employers.processText": "En quelques étapes simples, publiez vos offres et recevez des candidatures qualifiées.",
+
+      "employers.step1Title": "1. Créez votre compte",
+      "employers.step1Text": "Configurez votre profil entreprise et ajoutez vos informations clés.",
+
+      "employers.step2Title": "2. Publiez vos offres",
+      "employers.step2Text": "Rédigez vos annonces en FR/EN et mettez-les en ligne en quelques minutes.",
+
+      "employers.step3Title": "3. Recevez des candidatures",
+      "employers.step3Text": "Les candidats postulent directement depuis la plateforme.",
+
+      "employers.step4Title": "4. Recrutez efficacement",
+      "employers.step4Text": "Suivez les candidatures et échangez avec les talents en toute simplicité.",
+
+      "employers.cta2": "Créer un compte entreprise",
+
+      "footer.rights": "Tous droits réservés."
+    },
+
+    en: {
+      "nav.home": "Home",
+      "nav.jobs": "Jobs",
+      "nav.categories": "Categories",
+      "nav.about": "About",
+
+      "employers.title": "Employer Space",
+      "employers.subtitle": "Post your jobs, manage applications and find top talent.",
+
+      "employers.benefitsTitle": "Why recruit with us?",
+      "employers.benefitsText": "Our bilingual JobBoard helps you attract qualified candidates in France and internationally.",
+
+      "employers.feature1Title": "Bilingual job posts",
+      "employers.feature1Text": "Publish your ads in French and English to reach a wider audience.",
+
+      "employers.feature2Title": "Qualified candidates",
+      "employers.feature2Text": "Access experienced and specialized profiles.",
+
+      "employers.feature3Title": "Dashboard",
+      "employers.feature3Text": "Manage your jobs, applications and communication in one place.",
+
+      "employers.feature4Title": "Advanced filters",
+      "employers.feature4Text": "Quickly find candidates matching your criteria.",
+
+      "employers.cta": "Post a Job",
+
+      "employers.processTitle": "How it works",
+      "employers.processText": "In a few simple steps, publish your jobs and receive qualified applications.",
+
+      "employers.step1Title": "1. Create your account",
+      "employers.step1Text": "Set up your company profile and add your key information.",
+
+      "employers.step2Title": "2. Publish your jobs",
+      "employers.step2Text": "Write your ads in FR/EN and put them online in minutes.",
+
+      "employers.step3Title": "3. Receive applications",
+      "employers.step3Text": "Candidates apply directly from the platform.",
+
+      "employers.step4Title": "4. Hire efficiently",
+      "employers.step4Text": "Track applications and communicate with talent easily.",
+
+      "employers.cta2": "Create a company account",
+
+      "footer.rights": "All rights reserved."
+    }
+  };
+
+  function applyTranslations(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.textContent = translations[lang][key];
+    });
+  }
+
+  document.getElementById("btn-fr").onclick = () => {
+    applyTranslations("fr");
+    localStorage.setItem("lang", "fr");
+    document.getElementById("btn-fr").classList.add("active");
+    document.getElementById("btn-en").classList.remove("active");
+  };
+
+  document.getElementById("btn-en").onclick = () => {
+    applyTranslations("en");
+    localStorage.setItem("lang", "en");
+    document.getElementById("btn-en").classList.add("active");
+    document.getElementById("btn-fr").classList.remove("active");
+  };
+
+  const saved = localStorage.getItem("lang") || "fr";
+  applyTranslations(saved);
+  document.getElementById("btn-" + saved).classList.add("active");
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
