@@ -2,59 +2,137 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact – JobBoard Bilingue</title>
+  <title>Contact – Rubén D'ALVARD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contactez notre JobBoard bilingue FR/EN pour toute question, assistance ou demande professionnelle." />
+
+  <!-- SEO -->
+  <meta name="description" content="Contactez Rubén D'ALVARD pour toute opportunité professionnelle, collaboration ou information.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact – Rubén D'ALVARD">
+  <meta property="og:description" content="Responsable des Opérations, Service Client et Business Developer.">
+  <meta property="og:image" content="photo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="fr" href="contact.html">
+  <link rel="alternate" hreflang="en" href="contact.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body { font-family:'Inter',sans-serif; background:#F5F7FA; margin:0; }
-    header, footer { background:#fff; border-bottom:1px solid #E5E7EB; }
-    .container { max-width:1120px; margin:auto; padding:0 16px; }
-    .header-inner { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
-    .logo { display:flex; align-items:center; gap:8px; font-weight:700; color:#1F3C88; }
-    .logo-mark { width:28px; height:28px; background:linear-gradient(135deg,#1F3C88,#4F8FF7); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; }
-    nav a { margin-right:20px; color:#6B7280; font-size:14px; text-decoration:none; }
-    nav a:hover { color:#1F3C88; }
-    .lang-switch button { padding:6px 10px; border:none; cursor:pointer; }
-    .lang-switch .active { background:#1F3C88; color:#fff; border-radius:999px; }
-
-    h1 { font-size:32px; color:#1F3C88; margin-top:32px; }
-    .subtitle { color:#6B7280; margin-top:8px; }
-
-    .section { background:#fff; padding:20px; border-radius:12px; border:1px solid #E5E7EB; margin-top:24px; }
-    .section h2 { font-size:22px; color:#1F3C88; margin-bottom:12px; }
-    .section p { color:#6B7280; font-size:15px; }
-
-    form { display:grid; gap:16px; margin-top:16px; }
-    input, textarea {
-      width:100%; padding:12px; border-radius:8px;
-      border:1px solid #E5E7EB; font-size:14px;
+    :root {
+      --primary: #1F3C88;
+      --accent: #2BB673;
+      --bg: #F5F7FA;
+      --text-main: #1A1A1A;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
     }
-    textarea { resize:vertical; min-height:120px; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 16px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .lang-switch button {
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .lang-switch .active {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 999px;
+    }
+
+    /* CONTACT PAGE */
+    .contact {
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+
+    .contact-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .contact-box p {
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
+    }
 
     .btn-primary {
-      background:#2BB673; color:#fff; padding:12px 20px;
-      border-radius:999px; text-decoration:none; font-weight:600;
-      display:inline-block; border:none; cursor:pointer;
-    }
-    .btn-primary:hover { background:#23945f; }
-
-    .contact-grid {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:16px; margin-top:16px;
+      background: var(--accent);
+      color: #fff;
     }
 
-    .info-card {
-      background:#F9FAFB; padding:16px; border-radius:12px;
-      border:1px solid #E5E7EB;
+    footer {
+      padding: 20px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
     }
-    .info-title { font-size:16px; font-weight:600; color:#1F3C88; margin-bottom:6px; }
-    .info-text { font-size:14px; color:#6B7280; }
-
-    footer { padding:20px 0; margin-top:40px; border-top:1px solid #E5E7EB; font-size:13px; color:#6B7280; }
   </style>
 </head>
 
@@ -63,15 +141,13 @@
 <header>
   <div class="container header-inner">
     <div class="logo">
-      <div class="logo-mark">JB</div>
-      <span>JobBoard</span>
+      <strong style="color:var(--primary);">Rubén D'ALVARD</strong>
     </div>
 
     <nav>
       <a href="index.html" data-i18n="nav.home">Accueil</a>
-      <a href="jobs.html" data-i18n="nav.jobs">Offres</a>
-      <a href="categories.html" data-i18n="nav.categories">Catégories</a>
       <a href="about.html" data-i18n="nav.about">À propos</a>
+      <a href="cv.html" data-i18n="nav.cv">Mes CV</a>
       <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
 
@@ -82,125 +158,55 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
+<main class="container">
+  <section class="contact">
 
-    <h1 data-i18n="contact.title">Contact</h1>
-    <p class="subtitle" data-i18n="contact.subtitle">
-      Une question, un besoin d’assistance ou une demande professionnelle ? Nous sommes là pour vous aider.
-    </p>
+    <h1 data-i18n="contact.title">Me contacter</h1>
+    <h2 data-i18n="contact.subtitle">Pour toute opportunité professionnelle ou collaboration</h2>
 
-    <!-- FORMULAIRE -->
-    <div class="section">
-      <h2 data-i18n="contact.formTitle">Envoyer un message</h2>
-      <p data-i18n="contact.formText">
-        Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
+    <div class="contact-box">
+      <p data-i18n="contact.text">
+        Vous pouvez me contacter directement par email. Je réponds rapidement et avec plaisir.
       </p>
 
-      <form>
-        <input type="text" placeholder="Votre nom" data-i18n-placeholder="contact.name" />
-        <input type="email" placeholder="Votre email" data-i18n-placeholder="contact.email" />
-        <input type="text" placeholder="Objet" data-i18n-placeholder="contact.subject" />
-        <textarea placeholder="Votre message" data-i18n-placeholder="contact.message"></textarea>
-        <button class="btn-primary" type="submit" data-i18n="contact.send">Envoyer</button>
-      </form>
+      <a href="mailto:rubendalvard@gmail.com" class="btn btn-primary" data-i18n="contact.btnEmail">
+        Envoyer un email
+      </a>
     </div>
 
-    <!-- INFORMATIONS -->
-    <div class="section">
-      <h2 data-i18n="contact.infoTitle">Informations utiles</h2>
-
-      <div class="contact-grid">
-
-        <div class="info-card">
-          <div class="info-title" data-i18n="contact.supportTitle">Support</div>
-          <div class="info-text" data-i18n="contact.supportText">
-            Pour toute question technique ou problème de connexion.
-          </div>
-        </div>
-
-        <div class="info-card">
-          <div class="info-title" data-i18n="contact.businessTitle">Entreprises</div>
-          <div class="info-text" data-i18n="contact.businessText">
-            Vous souhaitez publier des offres ou en savoir plus sur nos solutions ?
-          </div>
-        </div>
-
-        <div class="info-card">
-          <div class="info-title" data-i18n="contact.pressTitle">Presse & Partenariats</div>
-          <div class="info-text" data-i18n="contact.pressText">
-            Contactez-nous pour toute demande média ou collaboration.
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
+  </section>
 </main>
 
 <footer>
-  <div class="container">
-    © <span id="year"></span> JobBoard — <span data-i18n="footer.rights">Tous droits réservés.</span>
-  </div>
+  © <span id="year"></span> Rubén D'ALVARD — <span data-i18n="footer.rights">Tous droits réservés.</span>
 </footer>
 
 <script>
   const translations = {
     fr: {
       "nav.home": "Accueil",
-      "nav.jobs": "Offres",
-      "nav.categories": "Catégories",
       "nav.about": "À propos",
+      "nav.cv": "Mes CV",
       "nav.contact": "Contact",
 
-      "contact.title": "Contact",
-      "contact.subtitle": "Une question, un besoin d’assistance ou une demande professionnelle ? Nous sommes là pour vous aider.",
-
-      "contact.formTitle": "Envoyer un message",
-      "contact.formText": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
-      "contact.name": "Votre nom",
-      "contact.email": "Votre email",
-      "contact.subject": "Objet",
-      "contact.message": "Votre message",
-      "contact.send": "Envoyer",
-
-      "contact.infoTitle": "Informations utiles",
-      "contact.supportTitle": "Support",
-      "contact.supportText": "Pour toute question technique ou problème de connexion.",
-      "contact.businessTitle": "Entreprises",
-      "contact.businessText": "Vous souhaitez publier des offres ou en savoir plus sur nos solutions ?",
-      "contact.pressTitle": "Presse & Partenariats",
-      "contact.pressText": "Contactez-nous pour toute demande média ou collaboration.",
+      "contact.title": "Me contacter",
+      "contact.subtitle": "Pour toute opportunité professionnelle ou collaboration",
+      "contact.text": "Vous pouvez me contacter directement par email. Je réponds rapidement et avec plaisir.",
+      "contact.btnEmail": "Envoyer un email",
 
       "footer.rights": "Tous droits réservés."
     },
 
     en: {
       "nav.home": "Home",
-      "nav.jobs": "Jobs",
-      "nav.categories": "Categories",
       "nav.about": "About",
+      "nav.cv": "My CVs",
       "nav.contact": "Contact",
 
-      "contact.title": "Contact",
-      "contact.subtitle": "A question, need assistance or a business inquiry? We’re here to help.",
-
-      "contact.formTitle": "Send a message",
-      "contact.formText": "Fill out the form below and we will get back to you as soon as possible.",
-      "contact.name": "Your name",
-      "contact.email": "Your email",
-      "contact.subject": "Subject",
-      "contact.message": "Your message",
-      "contact.send": "Send",
-
-      "contact.infoTitle": "Useful information",
-      "contact.supportTitle": "Support",
-      "contact.supportText": "For any technical question or login issue.",
-      "contact.businessTitle": "Businesses",
-      "contact.businessText": "Want to post jobs or learn more about our solutions?",
-      "contact.pressTitle": "Press & Partnerships",
-      "contact.pressText": "Contact us for media inquiries or collaborations.",
+      "contact.title": "Contact Me",
+      "contact.subtitle": "For any professional opportunity or collaboration",
+      "contact.text": "You can contact me directly by email. I usually reply quickly.",
+      "contact.btnEmail": "Send an email",
 
       "footer.rights": "All rights reserved."
     }
@@ -211,30 +217,20 @@
       const key = el.getAttribute("data-i18n");
       el.textContent = translations[lang][key];
     });
-
-    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-      const key = el.getAttribute("data-i18n-placeholder");
-      el.placeholder = translations[lang][key];
-    });
   }
 
   document.getElementById("btn-fr").onclick = () => {
     applyTranslations("fr");
     localStorage.setItem("lang", "fr");
-    document.getElementById("btn-fr").classList.add("active");
-    document.getElementById("btn-en").classList.remove("active");
   };
 
   document.getElementById("btn-en").onclick = () => {
     applyTranslations("en");
     localStorage.setItem("lang", "en");
-    document.getElementById("btn-en").classList.add("active");
-    document.getElementById("btn-fr").classList.remove("active");
   };
 
   const saved = localStorage.getItem("lang") || "fr";
   applyTranslations(saved);
-  document.getElementById("btn-" + saved).classList.add("active");
 
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
