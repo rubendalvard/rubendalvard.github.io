@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mes CV – Rubén D'ALVARD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <meta name="description" content="Téléchargez les CV de Rubén D'ALVARD en Français et en Anglais. Responsable des Opérations, Service Client et Business Developer.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mes CV – Rubén D'ALVARD">
+  <meta property="og:description" content="CV Français et Anglais – Responsable des Opérations, Service Client et Business Developer.">
+  <meta property="og:image" content="photo.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="fr" href="cv.html">
+  <link rel="alternate" hreflang="en" href="cv.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #1F3C88;
+      --accent: #2BB673;
+      --bg: #F5F7FA;
+      --text-main: #1A1A1A;
+      --text-muted: #6B7280;
+      --border: #E5E7EB;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 16px;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .lang-switch button {
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .lang-switch .active {
+      background: var(--primary);
+      color: #fff;
+      border-radius: 999px;
+    }
+
+    /* PAGE CV */
+    .cv-section {
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+
+    .cv-block {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .cv-block h3 {
+      font-size: 22px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .cv-block p {
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    footer {
+      padding: 20px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">
+      <strong style="color:var(--primary);">Rubén D'ALVARD</strong>
+    </div>
+
+    <nav>
+      <a href="index.html" data-i18n="nav.home">Accueil</a>
+      <a href="about.html" data-i18n="nav.about">À propos</a>
+      <a href="cv.html" data-i18n="nav.cv">Mes CV</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="lang-switch">
+      <button id="btn-fr" class="active">FR</button>
+      <button id="btn-en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="cv-section">
+
+    <h1 data-i18n="cv.title">Mes CV</h1>
+    <h2 data-i18n="cv.subtitle">Téléchargez mes CV en Français et en Anglais</h2>
+
+    <!-- CV FRANÇAIS -->
+    <div class="cv-block">
+      <h3 data-i18n="cv.frTitle">CV Français</h3>
+      <p data-i18n="cv.frText">
+        Version complète de mon CV en Français, incluant mon parcours professionnel, mes compétences clés et mes expériences en gestion opérationnelle, service client et développement commercial.
+      </p>
+      <a href="cv-fr.pdf" class="btn btn-primary" download data-i18n="cv.btnFR">Télécharger CV Français</a>
+    </div>
+
+    <!-- CV ANGLAIS -->
+    <div class="cv-block">
+      <h3 data-i18n="cv.enTitle">English CV</h3>
+      <p data-i18n="cv.enText">
+        Full English version of my resume, including my professional background, key skills, and experience in operations management, customer service and business development.
+      </p>
+      <a href="cv-en.pdf" class="btn btn-outline" download data-i18n="cv.btnEN">Download English CV</a>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Rubén D'ALVARD — <span data-i18n="footer.rights">Tous droits réservés.</span>
+</footer>
+
+<script>
+  const translations = {
+    fr: {
+      "nav.home": "Accueil",
+      "nav.about": "À propos",
+      "nav.cv": "Mes CV",
+      "nav.contact": "Contact",
+
+      "cv.title": "Mes CV",
+      "cv.subtitle": "Téléchargez mes CV en Français et en Anglais",
+
+      "cv.frTitle": "CV Français",
+      "cv.frText": "Version complète de mon CV en Français, incluant mon parcours professionnel, mes compétences clés et mes expériences en gestion opérationnelle, service client et développement commercial.",
+      "cv.btnFR": "Télécharger CV Français",
+
+      "cv.enTitle": "English CV",
+      "cv.enText": "Full English version of my resume, including my professional background, key skills, and experience in operations management, customer service and business development.",
+      "cv.btnEN": "Télécharger CV Anglais",
+
+      "footer.rights": "Tous droits réservés."
+    },
+
+    en: {
+      "nav.home": "Home",
+      "nav.about": "About",
+      "nav.cv": "My CVs",
+      "nav.contact": "Contact",
+
+      "cv.title": "My CVs",
+      "cv.subtitle": "Download my CVs in French and English",
+
+      "cv.frTitle": "French CV",
+      "cv.frText": "Complete French version of my resume, including my professional background, key skills, and experience in operations management, customer service and business development.",
+      "cv.btnFR": "Download French CV",
+
+      "cv.enTitle": "English CV",
+      "cv.enText": "Full English version of my resume, including my professional background, key skills, and experience in operations management, customer service and business development.",
+      "cv.btnEN": "Download English CV",
+
+      "footer.rights": "All rights reserved."
+    }
+  };
+
+  function applyTranslations(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.textContent = translations[lang][key];
+    });
+  }
+
+  document.getElementById("btn-fr").onclick = () => {
+    applyTranslations("fr");
+    localStorage.setItem("lang", "fr");
+  };
+
+  document.getElementById("btn-en").onclick = () => {
+    applyTranslations("en");
+    localStorage.setItem("lang", "en");
+  };
+
+  const saved = localStorage.getItem("lang") || "fr";
+  applyTranslations(saved);
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
